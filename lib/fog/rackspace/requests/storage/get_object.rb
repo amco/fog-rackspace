@@ -31,7 +31,7 @@ module Fog
           c = mock_container! container
           o = c.mock_object! object
 
-          body, size = "", 0
+          body, size = String.new, 0
 
           o.each_part do |part|
             body << part.body
